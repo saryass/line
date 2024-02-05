@@ -1,0 +1,102 @@
+
+.container {
+    border: 1px solid black;
+    height: 20px;
+    display: flex;
+    gap:20px;
+}
+
+.block {
+    background-color: yellow;
+    width: 33%;
+    position: relative;
+}
+
+.block::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************************************************/
+/* headlines   in   row4-box   in   row4-block   in    Row4  */
+/* *****************************************************************/
+.headlines {
+    /* border: 1px dashed orchid; */
+    display: flex;
+    flex-direction: column;
+    /* even though without using flex-box they are in a column, but i used flex-box to be able to give a  vertical gap sapace btw his elements ;) */
+    gap: 30px;
+    /* to make a vertical space btw his elements*/
+    margin-top: 22px;
+    /* to make a vertical space btw itself and above element, which is  <p class="paragraph> */
+}
+
+.little-dot-red {
+    /* border: 1px solid blue; */
+    /* background-color: pink; */
+    width: 94%;
+    color: #001f44;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.little-dot-red::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.little-dot-grey::before {
+    background-color: gray;
+    /* element is in row10 */
+}
+
+.little-dot-light-grey::before {
+    background-color: #9ecce0;
+    /* element is in row10 */
+}
